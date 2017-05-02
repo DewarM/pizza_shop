@@ -1,0 +1,28 @@
+<form action="/pizzas" autocomplete="off" method="POST">
+  <ul>
+    <li>
+      <label for="first_name">First Name</label>
+      <input id="first_name" name="first_name" type="text" placeholder="First Name">
+    </li>
+
+    <li>
+      <label for="last_name"> Last Name</label>
+      <input id="last_name" name="last_name" type="text" placeholder="Last Name">
+    </li>
+
+    <li>
+      <label for="pizza_select">Topping:</label>
+      <select id="pizza_select" name="topping">
+        <option value="Margherita">Margherita</option>
+        <option value="Italian Sausage">Italian Sausage</option>
+        <option value="Pepperoni">Pepperoni</option>
+      </select>
+    </li>
+    <li>
+      <label for="quantity">How many?</label>
+      <input id="quantity" type="number" name="quantity" value="1" min="1">
+    </li>
+
+    <li><input class="button" type="submit" value="Order Pizza"></li>
+  </ul>
+</form>

@@ -1,0 +1,15 @@
+<h2> Pizza Order </h2>
+
+<section class="pizza_order">
+  <p>Name: <%= @pizza.pretty_name %></p>
+  <p><%= @pizza.topping %> x <%= @pizza.quantity %></p>
+  <p>Total: <%= @pizza.total %></p>
+
+
+  <form action="/pizzas/<%= @pizza.id %>/edit" method="get">
+    <input class="button" type="submit" name="edit" value="edit">
+  </form>
+  <form action="/pizzas/<%= @pizza.id %>/delete" method="POST">
+    <input class="button" type="submit" name="delete" value="delete">
+  </form>
+</section>
