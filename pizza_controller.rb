@@ -31,6 +31,7 @@ end
 
 get '/pizzas/:id/edit' do
   @id = params[:id]
+  @pizza = Pizza.find(@id)
   erb(:edit)
 end
 
