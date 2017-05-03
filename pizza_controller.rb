@@ -3,6 +3,8 @@ require( 'sinatra/contrib/all' )
 require( 'pry-byebug' )
 require_relative( './models/pizza.rb')
 
+set :port, ENV['PORT']
+
 # READ
 get '/' do
   redirect to('/pizzas')
