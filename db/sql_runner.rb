@@ -3,7 +3,7 @@ class SqlRunner
 
   def self.run( sql )
     begin
-      db = PG.connect({ dbname: 'dlcaih0192iou', host: ENV['DATABASE_URL'] || 'localhost' })
+      db = PG.connect(ENV['DATABASE_URL'])
       result = db.exec( sql )
     ensure
       db.close
